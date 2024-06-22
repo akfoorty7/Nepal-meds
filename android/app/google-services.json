@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "109598364184",
+    "project_id": "nepalmedical-870eb",
+    "storage_bucket": "nepalmedical-870eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109598364184:android:0f829eb7286c7ac8bfa96d",
+        "android_client_info": {
+          "package_name": "com.example.nepalmeds"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi9boaMjXPA_Ckdj6uFV_quk7m8pRn7r8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
