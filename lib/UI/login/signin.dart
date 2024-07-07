@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nepalmeds/signup.dart'; // Ensure this import is correct
-import 'AuthService.dart';
-import 'NewPage.dart';
+import 'package:nepalmeds/UI/signup/signup.dart'; // Ensure this import is correct
+import '../../API/registration/AuthService.dart';
+import '../home/NewPage.dart';
 
 class SignInPage extends StatefulWidget {
   @override
