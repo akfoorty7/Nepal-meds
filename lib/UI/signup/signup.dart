@@ -8,7 +8,7 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPageState extends State<SignUpPage> {
-  final TextEditingController _usernameController = TextEditingController();
+  final TextEditingController usernameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _confirmPasswordController = TextEditingController();
@@ -27,7 +27,7 @@ class _SignUpPageState extends State<SignUpPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             TextField(
-              controller: _usernameController,
+              controller: usernameController,
               decoration: InputDecoration(
                 labelText: 'Username',
                 prefixIcon: Icon(Icons.person),
@@ -87,7 +87,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   return;
                 }
 
-                String result = await AuthService().signUp(_emailController.text, _passwordController.text);
+                String result = await AuthService().signUp(_emailController.text, _passwordController.text, );
 
                 if (result == "Success") {
                   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SignInPage()));
