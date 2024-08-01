@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:nepalmeds/UI/login/signincontroller.dart';
 import '../../common widget/custom_text_form.dart';
 import '../../common widget/validators.dart';
-import '../signup/signup.dart';
+import '../signup/signup_view.dart';
 
 class SignInPage extends StatelessWidget{
   final _signinController = Get.put(SignInController());

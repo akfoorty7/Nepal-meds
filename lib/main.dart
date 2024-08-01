@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:nepalmeds/UI/login/signin.dart';
+
 late final FirebaseApp app;
 late final FirebaseAuth auth;
 
@@ -11,10 +12,11 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   app = await Firebase.initializeApp();
   auth = FirebaseAuth.instanceFor(app: app);
-  runApp(NepalMeds());
+  runApp(const MyApp());
 }
-class NepalMeds extends StatelessWidget {
-  const NepalMeds({super.key});
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,10 +24,10 @@ class NepalMeds extends StatelessWidget {
       designSize: const Size(360, 690),
       builder: (context, child) {
         return GetMaterialApp(
+          debugShowCheckedModeBanner: false,
           home: SignInPage(),
         );
       },
     );
   }
 }
-

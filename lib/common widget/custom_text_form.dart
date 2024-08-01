@@ -14,7 +14,8 @@ class CustomTextField extends StatefulWidget {
     required this.prefixIcon,
     required this.validator,
     this.obscureText = false,
-    this.suffixIcon, required InputDecoration decoration,
+    this.suffixIcon,
+    required InputDecoration decoration,
   });
 
   @override

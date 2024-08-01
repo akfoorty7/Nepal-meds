@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nepalmeds/API/registration/AuthService.dart';
 
-import '../home/NewPage.dart';
+import '../home/homepage.dart';
 
 class SignInController extends GetxController {
   var email = ''.obs;

@@ -40,6 +40,7 @@ class Validators {
     }
     return null;
   }
+
   static String? validatepassword(String? value) {
     if (value == null || value.trim().isEmpty) {
       return 'Cannot leave empty';
