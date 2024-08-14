@@ -24,7 +24,7 @@ class SignUpPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextFormField(
-                  controller: _signupController.usernameController,
+                  controller: _signupController.fullnameController,
                   validator: Validators.validateNotEmpty,
                   decoration: InputDecoration(
                     labelText: 'Username',
@@ -39,6 +39,16 @@ class SignUpPage extends StatelessWidget {
                   decoration: InputDecoration(
                     labelText: 'Email',
                     prefixIcon: Icon(Icons.email),
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                SizedBox(height: 16.0),
+                TextFormField(
+                  controller: _signupController.mobilenumberController,
+                  validator: Validators.validateMobileNumber,
+                  decoration: InputDecoration(
+                    labelText: 'mobileNumber',
+                    prefixIcon: Icon(Icons.phone),
                     border: OutlineInputBorder(),
                   ),
                 ),

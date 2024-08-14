@@ -22,7 +22,7 @@ class SignInController extends GetxController {
 
     if (result == "Success") {
       Get.snackbar('Login Success', ' Welcome!, ${emailController.text}');
-      Get.to(HomePage());
+      Get.off(HomePage());
     } else {
       Get.snackbar('Login Failed', 'Invalid email or password');
     }

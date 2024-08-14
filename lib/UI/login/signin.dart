@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 import 'package:nepalmeds/UI/login/signincontroller.dart';
+import '../../admin/view/admin.view.dart';
 import '../../common widget/custom_text_form.dart';
 import '../../common widget/validators.dart';
 import '../signup/signup_view.dart';
@@ -131,7 +132,18 @@ class SignInPage extends StatelessWidget{
                             style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
                           ),
                         ),
+
                       ],
+                    ),
+                    SizedBox(height: 16,),
+                    GestureDetector(
+                      onTap: () {
+                        Get.to(() => AdminView());
+                      },
+                      child: const Text(
+                        "Log In As Admin",
+                        style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ],
                 ),
