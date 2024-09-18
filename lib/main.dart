@@ -5,12 +5,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:nepalmeds/UI/login/signin.dart';
 
+import 'UI/Notification/firebase_api.dart';
+
 late final FirebaseApp app;
 late final FirebaseAuth auth;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   app = await Firebase.initializeApp();
+  await FirebaseApi().initNotifications();
   auth = FirebaseAuth.instanceFor(app: app);
   runApp(const MyApp());
 }
